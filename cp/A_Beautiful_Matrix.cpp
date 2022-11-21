@@ -26,4 +26,5 @@ int main()
     cout << abs(2 - x) + abs(2 - y) << "\n";
 
     return 0;
+    
 }
