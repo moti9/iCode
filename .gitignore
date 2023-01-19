@@ -17,6 +17,7 @@ README.md
 
 # Unignore all dirs
 !*/
+!*/node_modules
 
 ### Above combination will ignore all files without extension ###
 
