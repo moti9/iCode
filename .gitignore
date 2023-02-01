@@ -1,6 +1,10 @@
 */.cph/*
 /.cph/*
 
+*react/
+/react/*
+/react/
+
 .vscode
 .git
 
