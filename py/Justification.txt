@@ -1,0 +1,10 @@
+We are mainly using two method to check that any website uses WordPress or not.
+The first one is using default login dashboard(wp-admin) and the second one is by checking some 
+keywords like wp-content,wp-includes.
+
+In the first method if we got login page by adding wp-admin in the url then we can say that it uses
+WordPress.
+In the second method we check the keywords in the source code of the website if we found the words
+then we can say that it uses WordPress.
+
+And the same method(like second method) we can use for checking version of the WordPress.
