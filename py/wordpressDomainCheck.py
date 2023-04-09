@@ -2,8 +2,6 @@ import re
 import requests
 
 # Check version
-
-
 def check_wordpress_version(url):
     try:
         response = requests.get(url)
@@ -23,21 +21,18 @@ def check_wordpress_version(url):
 
 # Check for wordpress
 def is_using_wordpress(url):
-    try:
-        response = requests.get(f"{url}wp-admin/")
-        if response.status_code == 200:
+    response = requests.get(f"{url}wp-admin/")
+    if response.status_code == 200:
+        print("Yes")
+        return True
+    else:
+        wordpress_pattern = r"wp-(?:content|includes)"
+        if re.search(wordpress_pattern, response.text):
             print("Yes")
             return True
         else:
-            wordpress_pattern = r"wp-(?:content|includes)"
-            if re.search(wordpress_pattern, response.text):
-                print("Yes")
-                return True
-            else:
-                print("No")
-                return False
-    except:
-        print("Some error occured!")
+            print("No")
+            return False
 
 
 if __name__ == "__main__":
