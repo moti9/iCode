@@ -5,45 +5,67 @@ using namespace std;
 
 class Solution
 {
-    void solve(int st, int ed, vector<int> adj[], vector<bool> &vis, vector<int> &price, int sum, int &ans)
+    bool countPath(int node, int dest, int pr, vector<int> adj[], vector<int> &cnt)
     {
-        if (st == ed)
+        if (node == dest)
         {
-            ans += (sum + price[ed]);
-            return;
+            return true;
         }
-        vis[st] = true;
-        for (auto ad : adj[st])
-        {
-            if (!vis[ad])
-            {
-                solve(ad, ed, adj, vis, price, sum + price[st], ans);
-            }
-        }
-        return;
-    }
-
-    void divPrice(int node, bool divpr, vector<int> adj[], vector<bool> &vis, vector<int> &price, int &sum)
-    {
-        if (!divpr)
-        {
-            price[node] /= 2;
-            divpr = true;
-        }
-        else
-        {
-            divpr = false;
-        }
-        vis[node] = true;
-        sum += price[node];
         for (auto ad : adj[node])
         {
-            if (!vis[ad])
+            if (ad != pr)
             {
-                divPrice(ad, divpr, adj, vis, price, sum);
+                if (countPath(ad, dest, node, adj, cnt))
+                {
+                    cnt[ad]++;
+                    return true;
+                }
             }
         }
-        return;
+        return false;
+    }
+
+    int solve(int node, int pr, int divpr, vector<int> adj[], vector<int> &price, vector<vector<int>> &dp, vector<int> &cnt)
+    {
+        if (dp[node][divpr] != -1)
+        {
+            return dp[node][divpr];
+        }
+        int childs = 0;
+        for (auto ad : adj[node])
+            if (ad != pr)
+                childs++;
+        if (childs == 0)
+        {
+            if (divpr)
+                return dp[node][divpr] = cnt[node] * price[node];
+            return dp[node][divpr] = cnt[node] * (price[node] / 2);
+        }
+        if (divpr)
+        {
+            int ans = 0;
+            for (auto ad : adj[node])
+            {
+                if (ad != pr)
+                {
+                    ans += solve(ad, node, 0, adj, price, dp, cnt);
+                }
+            }
+            ans += cnt[node] * price[node];
+            return dp[node][divpr] = ans;
+        }
+        int ans1 = 0, ans2 = 0;
+        for (auto ad : adj[node])
+        {
+            if (ad != pr)
+            {
+                ans1 += solve(ad, node, 0, adj, price, dp, cnt);
+                ans2 += solve(ad, node, 1, adj, price, dp, cnt);
+            }
+        }
+        ans1 += cnt[node] * price[node];
+        ans2 += cnt[node] * (price[node] / 2);
+        return dp[node][divpr] = min(ans1, ans2);
     }
 
 public:
@@ -55,51 +77,14 @@ public:
             adj[e[0]].push_back(e[1]);
             adj[e[1]].push_back(e[0]);
         }
-        vector<bool> vis(n,false);
-        int sum=0;
-        divPrice(1, false, adj, vis, price, sum);
-        for(auto p:price) cout<<p<<" ";
-        cout<<sum<<endl;
-        return sum;
-        // Div Logic Start
-        vector<int> fp = price;
-        int sumfp = 0;
-        for (auto p : price)
-            sumfp += p;
-        for (int i = 0; i < n; i++)
-        {
-            vector<bool> vis(n, false);
-            vector<int> np = price;
-            int sumnp = 0;
-            divPrice(i, true, adj, vis, np, sumnp);
-            if (sumnp <= sumfp)
-            {
-                sumfp = sumnp;
-                fp = np;
-            }
-            vis.clear();
-            np = price;
-            sumnp = 0;
-            divPrice(i, false, adj, vis, np, sumnp);
-            if (sumnp <= sumfp)
-            {
-                sumfp = sumnp;
-                fp = np;
-            }
-        }
-        // cout << sumfp << endl;
-        // for (auto f : fp)
-        //     cout << f << " ";
-        // cout << endl;
-        // Div Logic END
-        int ans = 0;
+        vector<int> cnt(n, 0);
         for (auto tr : trips)
         {
-            vector<bool> vis(n, false);
-            int sum = 0;
-            solve(tr[0], tr[1], adj, vis, fp, sum, ans);
+            cnt[tr[0]]++;
+            countPath(tr[0], tr[1], -1, adj, cnt);
         }
-        return ans;
+        vector<vector<int>> dp(n, vector<int>(2, -1));
+        return solve(0, -1, 0, adj, price, dp, cnt);
     }
 };
 
