@@ -15,6 +15,7 @@ class Solution
         if (last != slast)
         {
             stones.push_back(last - slast);
+            
         }
     }
 

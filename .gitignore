@@ -36,3 +36,6 @@ bin/
 
 # Unignore all `.exe` in `bin` dir
 !*/bin/*.exe
+dsa/BinSearch/.vscode/settings.json
+dsa/BinSearch/.vscode/settings.json
+dsa/DP/.vscode/settings.json
