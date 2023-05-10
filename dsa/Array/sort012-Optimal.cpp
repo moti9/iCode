@@ -6,7 +6,12 @@ using namespace std;
 // TC- O(N)
 // SC- O(1)
 // Dutch National Flag Algorithm
-
+/*
+Three rules-
+1. [0,1,2,.....,low-1]---Extreme left
+2. [low,low+1,low+2,.....,mid-1]
+3. [high,high+1,high+2,.....,n-1]-----Extreme right
+*/
 class Solution
 {
 public:
