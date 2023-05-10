@@ -1,0 +1,1145 @@
+[
+    {
+        "annotations": {
+            "DMS": {
+                "lat": "22\u00b0 21' 4.01328'' N",
+                "lng": "78\u00b0 40' 3.87408'' E"
+            },
+            "MGRS": "44QKK5981273550",
+            "Maidenhead": "ML92ii04dg",
+            "Mercator": {
+                "x": 8757253.07,
+                "y": 2537490.922
+            },
+            "OSM": {
+                "edit_url": "https://www.openstreetmap.org/edit?relation=304716#map=17/22.35111/78.66774",
+                "note_url": "https://www.openstreetmap.org/note/new#map=17/22.35111/78.66774&layers=N",
+                "url": "https://www.openstreetmap.org/?mlat=22.35111&mlon=78.66774#map=17/22.35111/78.66774"
+            },
+            "UN_M49": {
+                "regions": {
+                    "ASIA": "142",
+                    "IN": "356",
+                    "SOUTHERN_ASIA": "034",
+                    "WORLD": "001"
+                },
+                "statistical_groupings": [
+                    "LEDC"
+                ]
+            },
+            "callingcode": 91,
+            "currency": {
+                "alternate_symbols": [
+                    "Rs",
+                    "\u09f3",
+                    "\u0af1",
+                    "\u0bf9",
+                    "\u0930\u0941",
+                    "\u20a8"
+                ],
+                "decimal_mark": ".",
+                "html_entity": "&#x20b9;",
+                "iso_code": "INR",
+                "iso_numeric": "356",
+                "name": "Indian Rupee",
+                "smallest_denomination": 50,
+                "subunit": "Paisa",
+                "subunit_to_unit": 100,
+                "symbol": "\u20b9",
+                "symbol_first": 1,
+                "thousands_separator": ","
+            },
+            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "geohash": "tezznhuhemb94y00nqrq",
+            "qibla": 276.07,
+            "roadinfo": {
+                "drive_on": "left",
+                "speed_in": "km/h"
+            },
+            "sun": {
+                "rise": {
+                    "apparent": 1683591000,
+                    "astronomical": 1683672540,
+                    "civil": 1683675960,
+                    "nautical": 1683674280
+                },
+                "set": {
+                    "apparent": 1683638040,
+                    "astronomical": 1683642900,
+                    "civil": 1683639480,
+                    "nautical": 1683641160
+                }
+            },
+            "timezone": {
+                "name": "Asia/Kolkata",
+                "now_in_dst": 0,
+                "offset_sec": 19800,
+                "offset_string": "+0530",
+                "short_name": "IST"
+            },
+            "what3words": {
+                "words": "dryness.herbalists.unceasingly"
+            },
+            "wikidata": "Q668"
+        },
+        "bounds": {
+            "northeast": {
+                "lat": 35.6745457,
+                "lng": 97.395561
+            },
+            "southwest": {
+                "lat": 6.5531169,
+                "lng": 67.9544415
+            }
+        },
+        "components": {
+            "ISO_3166-1_alpha-2": "IN",
+            "ISO_3166-1_alpha-3": "IND",
+            "_category": "place",
+            "_type": "country",
+            "continent": "Asia",
+            "country": "India",
+            "country_code": "in"
+        },
+        "confidence": 1,
+        "formatted": "India",
+        "geometry": {
+            "lat": 22.3511148,
+            "lng": 78.6677428
+        }
+    },
+    {
+        "annotations": {
+            "DMS": {
+                "lat": "2\u00b0 10' 59.99880'' N",
+                "lng": "33\u00b0 40' 59.99880'' E"
+            },
+            "MGRS": "36NWH7598441342",
+            "Maidenhead": "KJ62ue24aa",
+            "Mercator": {
+                "x": 3749611.478,
+                "y": 241479.696
+            },
+            "OSM": {
+                "edit_url": "https://www.openstreetmap.org/edit?node=2229108461#map=17/2.18333/33.68333",
+                "note_url": "https://www.openstreetmap.org/note/new#map=17/2.18333/33.68333&layers=N",
+                "url": "https://www.openstreetmap.org/?mlat=2.18333&mlon=33.68333#map=17/2.18333/33.68333"
+            },
+            "UN_M49": {
+                "regions": {
+                    "AFRICA": "002",
+                    "EASTERN_AFRICA": "014",
+                    "SUB-SAHARAN_AFRICA": "202",
+                    "UG": "800",
+                    "WORLD": "001"
+                },
+                "statistical_groupings": [
+                    "LDC",
+                    "LEDC",
+                    "LLDC"
+                ]
+            },
+            "callingcode": 256,
+            "currency": {
+                "alternate_symbols": [],
+                "decimal_mark": ".",
+                "format": "%n %u",
+                "html_entity": "",
+                "iso_code": "UGX",
+                "iso_numeric": "800",
+                "name": "Ugandan Shilling",
+                "smallest_denomination": 1000,
+                "subunit": "Cent",
+                "subunit_to_unit": 1,
+                "symbol": "USh",
+                "symbol_first": 0,
+                "thousands_separator": ","
+            },
+            "flag": "\ud83c\uddfa\ud83c\uddec",
+            "geohash": "s8ruqmrqydc2xkvqk0rg",
+            "qibla": 16.81,
+            "roadinfo": {
+                "drive_on": "left",
+                "speed_in": "km/h"
+            },
+            "sun": {
+                "rise": {
+                    "apparent": 1683603420,
+                    "astronomical": 1683599100,
+                    "civil": 1683602100,
+                    "nautical": 1683600600
+                },
+                "set": {
+                    "apparent": 1683647220,
+                    "astronomical": 1683651540,
+                    "civil": 1683648540,
+                    "nautical": 1683650040
+                }
+            },
+            "timezone": {
+                "name": "Africa/Kampala",
+                "now_in_dst": 0,
+                "offset_sec": 10800,
+                "offset_string": "+0300",
+                "short_name": "EAT"
+            },
+            "what3words": {
+                "words": "clockwork.glitches.jubilantly"
+            }
+        },
+        "bounds": {
+            "northeast": {
+                "lat": 2.203333,
+                "lng": 33.703333
+            },
+            "southwest": {
+                "lat": 2.163333,
+                "lng": 33.663333
+            }
+        },
+        "components": {
+            "ISO_3166-1_alpha-2": "UG",
+            "ISO_3166-1_alpha-3": "UGA",
+            "ISO_3166-2": [
+                "UG-E",
+                "UG-236"
+            ],
+            "_category": "place",
+            "_type": "village",
+            "continent": "Africa",
+            "country": "Uganda",
+            "country_code": "ug",
+            "region": "Eastern Region",
+            "state": "Kapelebyong",
+            "village": "India"
+        },
+        "confidence": 7,
+        "formatted": "India, Kapelebyong, Uganda",
+        "geometry": {
+            "lat": 2.183333,
+            "lng": 33.683333
+        }
+    },
+    {
+        "annotations": {
+            "DMS": {
+                "lat": "3\u00b0 20' 27.31992'' N",
+                "lng": "32\u00b0 36' 2.45196'' E"
+            },
+            "MGRS": "36NVJ5564069285",
+            "Maidenhead": "KJ63hi21bt",
+            "Mercator": {
+                "x": 3629091.22,
+                "y": 369632.377
+            },
+            "OSM": {
+                "edit_url": "https://www.openstreetmap.org/edit?node=10844058901#map=17/3.34092/32.60068",
+                "note_url": "https://www.openstreetmap.org/note/new#map=17/3.34092/32.60068&layers=N",
+                "url": "https://www.openstreetmap.org/?mlat=3.34092&mlon=32.60068#map=17/3.34092/32.60068"
+            },
+            "UN_M49": {
+                "regions": {
+                    "AFRICA": "002",
+                    "EASTERN_AFRICA": "014",
+                    "SUB-SAHARAN_AFRICA": "202",
+                    "UG": "800",
+                    "WORLD": "001"
+                },
+                "statistical_groupings": [
+                    "LDC",
+                    "LEDC",
+                    "LLDC"
+                ]
+            },
+            "callingcode": 256,
+            "currency": {
+                "alternate_symbols": [],
+                "decimal_mark": ".",
+                "format": "%n %u",
+                "html_entity": "",
+                "iso_code": "UGX",
+                "iso_numeric": "800",
+                "name": "Ugandan Shilling",
+                "smallest_denomination": 1000,
+                "subunit": "Cent",
+                "subunit_to_unit": 1,
+                "symbol": "USh",
+                "symbol_first": 0,
+                "thousands_separator": ","
+            },
+            "flag": "\ud83c\uddfa\ud83c\uddec",
+            "geohash": "s8x5jb5n6cj9nydcxxyz",
+            "qibla": 20.64,
+            "roadinfo": {
+                "drive_on": "left",
+                "speed_in": "km/h"
+            },
+            "sun": {
+                "rise": {
+                    "apparent": 1683603540,
+                    "astronomical": 1683599220,
+                    "civil": 1683602280,
+                    "nautical": 1683600780
+                },
+                "set": {
+                    "apparent": 1683647580,
+                    "astronomical": 1683651900,
+                    "civil": 1683648840,
+                    "nautical": 1683650400
+                }
+            },
+            "timezone": {
+                "name": "Africa/Kampala",
+                "now_in_dst": 0,
+                "offset_sec": 10800,
+                "offset_string": "+0300",
+                "short_name": "EAT"
+            },
+            "what3words": {
+                "words": "unbelieving.leafy.boiled"
+            }
+        },
+        "bounds": {
+            "northeast": {
+                "lat": 3.3609222,
+                "lng": 32.6206811
+            },
+            "southwest": {
+                "lat": 3.3209222,
+                "lng": 32.5806811
+            }
+        },
+        "components": {
+            "ISO_3166-1_alpha-2": "UG",
+            "ISO_3166-1_alpha-3": "UGA",
+            "ISO_3166-2": [
+                "UG-326"
+            ],
+            "_category": "place",
+            "_type": "village",
+            "continent": "Africa",
+            "country": "Uganda",
+            "country_code": "ug",
+            "state": "Lamwo",
+            "village": "India"
+        },
+        "confidence": 7,
+        "formatted": "India, Lamwo, Uganda",
+        "geometry": {
+            "lat": 3.3409222,
+            "lng": 32.6006811
+        }
+    },
+    {
+        "annotations": {
+            "DMS": {
+                "lat": "50\u00b0 50' 56.09040'' N",
+                "lng": "2\u00b0 57' 2.11752'' E"
+            },
+            "MGRS": "31UDS9652133024",
+            "Maidenhead": "JO10lu43br",
+            "Mercator": {
+                "x": 328457.976,
+                "y": 6561455.853
+            },
+            "NUTS": {
+                "NUTS0": {
+                    "code": "BE"
+                },
+                "NUTS1": {
+                    "code": "BE2"
+                },
+                "NUTS2": {
+                    "code": "BE25"
+                },
+                "NUTS3": {
+                    "code": "BE253"
+                }
+            },
+            "OSM": {
+                "edit_url": "https://www.openstreetmap.org/edit?node=10115590166#map=17/50.84891/2.95059",
+                "note_url": "https://www.openstreetmap.org/note/new#map=17/50.84891/2.95059&layers=N",
+                "url": "https://www.openstreetmap.org/?mlat=50.84891&mlon=2.95059#map=17/50.84891/2.95059"
+            },
+            "UN_M49": {
+                "regions": {
+                    "BE": "056",
+                    "EUROPE": "150",
+                    "WESTERN_EUROPE": "155",
+                    "WORLD": "001"
+                },
+                "statistical_groupings": [
+                    "MEDC"
+                ]
+            },
+            "callingcode": 32,
+            "currency": {
+                "alternate_symbols": [],
+                "decimal_mark": ",",
+                "html_entity": "\u20ac",
+                "iso_code": "EUR",
+                "iso_numeric": "978",
+                "name": "Euro",
+                "smallest_denomination": 1,
+                "subunit": "Cent",
+                "subunit_to_unit": 100,
+                "symbol": "\u20ac",
+                "symbol_first": 0,
+                "thousands_separator": "."
+            },
+            "flag": "\ud83c\udde7\ud83c\uddea",
+            "geohash": "u14170u83sw50c1qt61e",
+            "qibla": 121.84,
+            "roadinfo": {
+                "drive_on": "right",
+                "speed_in": "km/h"
+            },
+            "sun": {
+                "rise": {
+                    "apparent": 1683605400,
+                    "astronomical": 1683595980,
+                    "civil": 1683603060,
+                    "nautical": 1683600000
+                },
+                "set": {
+                    "apparent": 1683660000,
+                    "astronomical": 1683669540,
+                    "civil": 1683662340,
+                    "nautical": 1683665460
+                }
+            },
+            "timezone": {
+                "name": "Europe/Brussels",
+                "now_in_dst": 1,
+                "offset_sec": 7200,
+                "offset_string": "+0200",
+                "short_name": "CEST"
+            },
+            "what3words": {
+                "words": "scorch.snorers.obediently"
+            }
+        },
+        "bounds": {
+            "northeast": {
+                "lat": 50.858914,
+                "lng": 2.9605882
+            },
+            "southwest": {
+                "lat": 50.838914,
+                "lng": 2.9405882
+            }
+        },
+        "components": {
+            "ISO_3166-1_alpha-2": "BE",
+            "ISO_3166-1_alpha-3": "BEL",
+            "ISO_3166-2": [
+                "BE-VLG",
+                "BE-VWV"
+            ],
+            "_category": "place",
+            "_type": "village",
+            "continent": "Europe",
+            "country": "Belgium",
+            "country_code": "be",
+            "county": "Ieper",
+            "political_union": "European Union",
+            "postcode": "8902",
+            "quarter": "India",
+            "region": "Flanders",
+            "state": "West Flanders",
+            "state_code": "VWV",
+            "town": "Ypres",
+            "village": "Zillebeke"
+        },
+        "confidence": 8,
+        "formatted": "8902 Ypres, Belgium",
+        "geometry": {
+            "lat": 50.848914,
+            "lng": 2.9505882
+        }
+    },
+    {
+        "annotations": {
+            "DMS": {
+                "lat": "32\u00b0 31' 30.49500'' N",
+                "lng": "96\u00b0 36' 57.96972'' W"
+            },
+            "FIPS": {
+                "county": "48139",
+                "state": "48"
+            },
+            "MGRS": "14SQB2390601151",
+            "Maidenhead": "EM12qm66ba",
+            "Mercator": {
+                "x": -10755255.355,
+                "y": 3809470.141
+            },
+            "OSM": {
+                "edit_url": "https://www.openstreetmap.org/edit?node=151786687#map=17/32.52514/-96.61610",
+                "note_url": "https://www.openstreetmap.org/note/new#map=17/32.52514/-96.61610&layers=N",
+                "url": "https://www.openstreetmap.org/?mlat=32.52514&mlon=-96.61610#map=17/32.52514/-96.61610"
+            },
+            "UN_M49": {
+                "regions": {
+                    "AMERICAS": "019",
+                    "NORTHERN_AMERICA": "021",
+                    "US": "840",
+                    "WORLD": "001"
+                },
+                "statistical_groupings": [
+                    "MEDC"
+                ]
+            },
+            "callingcode": 1,
+            "currency": {
+                "alternate_symbols": [
+                    "US$"
+                ],
+                "decimal_mark": ".",
+                "disambiguate_symbol": "US$",
+                "html_entity": "$",
+                "iso_code": "USD",
+                "iso_numeric": "840",
+                "name": "United States Dollar",
+                "smallest_denomination": 1,
+                "subunit": "Cent",
+                "subunit_to_unit": 100,
+                "symbol": "$",
+                "symbol_first": 1,
+                "thousands_separator": ","
+            },
+            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "geohash": "9vg313n29th686ttgm48",
+            "qibla": 43.73,
+            "roadinfo": {
+                "drive_on": "right",
+                "speed_in": "mph"
+            },
+            "sun": {
+                "rise": {
+                    "apparent": 1683632040,
+                    "astronomical": 1683626460,
+                    "civil": 1683630420,
+                    "nautical": 1683628500
+                },
+                "set": {
+                    "apparent": 1683594780,
+                    "astronomical": 1683600300,
+                    "civil": 1683596340,
+                    "nautical": 1683598260
+                }
+            },
+            "timezone": {
+                "name": "America/Chicago",
+                "now_in_dst": 1,
+                "offset_sec": -18000,
+                "offset_string": "-0500",
+                "short_name": "CDT"
+            },
+            "what3words": {
+                "words": "eliminates.hustle.mobiles"
+            }
+        },
+        "bounds": {
+            "northeast": {
+                "lat": 32.5451375,
+                "lng": -96.5961027
+            },
+            "southwest": {
+                "lat": 32.5051375,
+                "lng": -96.6361027
+            }
+        },
+        "components": {
+            "ISO_3166-1_alpha-2": "US",
+            "ISO_3166-1_alpha-3": "USA",
+            "ISO_3166-2": [
+                "US-TX"
+            ],
+            "_category": "place",
+            "_type": "hamlet",
+            "continent": "North America",
+            "country": "United States",
+            "country_code": "us",
+            "county": "Ellis County",
+            "hamlet": "India",
+            "postcode": "75125",
+            "state": "Texas",
+            "state_code": "TX"
+        },
+        "confidence": 7,
+        "formatted": "India, Ellis County, TX 75125, United States of America",
+        "geometry": {
+            "lat": 32.5251375,
+            "lng": -96.6161027
+        }
+    },
+    {
+        "annotations": {
+            "DMS": {
+                "lat": "40\u00b0 22' 35.25564'' N",
+                "lng": "79\u00b0 7' 10.11252'' W"
+            },
+            "FIPS": {
+                "county": "42063",
+                "state": "42"
+            },
+            "MGRS": "17TPE5964071239",
+            "Maidenhead": "FN00kj50pi",
+            "Mercator": {
+                "x": -8807539.747,
+                "y": 4893114.369
+            },
+            "OSM": {
+                "edit_url": "https://www.openstreetmap.org/edit?node=158339155#map=17/40.37646/-79.11948",
+                "note_url": "https://www.openstreetmap.org/note/new#map=17/40.37646/-79.11948&layers=N",
+                "url": "https://www.openstreetmap.org/?mlat=40.37646&mlon=-79.11948#map=17/40.37646/-79.11948"
+            },
+            "UN_M49": {
+                "regions": {
+                    "AMERICAS": "019",
+                    "NORTHERN_AMERICA": "021",
+                    "US": "840",
+                    "WORLD": "001"
+                },
+                "statistical_groupings": [
+                    "MEDC"
+                ]
+            },
+            "callingcode": 1,
+            "currency": {
+                "alternate_symbols": [
+                    "US$"
+                ],
+                "decimal_mark": ".",
+                "disambiguate_symbol": "US$",
+                "html_entity": "$",
+                "iso_code": "USD",
+                "iso_numeric": "840",
+                "name": "United States Dollar",
+                "smallest_denomination": 1,
+                "subunit": "Cent",
+                "subunit_to_unit": 100,
+                "symbol": "$",
+                "symbol_first": 1,
+                "thousands_separator": ","
+            },
+            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "geohash": "dpptxw6cytduyruy0xkg",
+            "qibla": 55.01,
+            "roadinfo": {
+                "drive_on": "right",
+                "speed_in": "mph"
+            },
+            "sun": {
+                "rise": {
+                    "apparent": 1683626880,
+                    "astronomical": 1683620340,
+                    "civil": 1683625020,
+                    "nautical": 1683622800
+                },
+                "set": {
+                    "apparent": 1683591540,
+                    "astronomical": 1683598080,
+                    "civil": 1683593340,
+                    "nautical": 1683595620
+                }
+            },
+            "timezone": {
+                "name": "America/New_York",
+                "now_in_dst": 1,
+                "offset_sec": -14400,
+                "offset_string": "-0400",
+                "short_name": "EDT"
+            },
+            "what3words": {
+                "words": "densely.author.decays"
+            }
+        },
+        "bounds": {
+            "northeast": {
+                "lat": 40.3964599,
+                "lng": -79.0994757
+            },
+            "southwest": {
+                "lat": 40.3564599,
+                "lng": -79.1394757
+            }
+        },
+        "components": {
+            "ISO_3166-1_alpha-2": "US",
+            "ISO_3166-1_alpha-3": "USA",
+            "ISO_3166-2": [
+                "US-PA"
+            ],
+            "_category": "place",
+            "_type": "hamlet",
+            "city": "West Wheatfield Township",
+            "continent": "North America",
+            "country": "United States",
+            "country_code": "us",
+            "county": "Indiana County",
+            "hamlet": "India",
+            "postcode": "15949",
+            "state": "Pennsylvania",
+            "state_code": "PA"
+        },
+        "confidence": 7,
+        "formatted": "India, West Wheatfield Township, PA 15949, United States of America",
+        "geometry": {
+            "lat": 40.3764599,
+            "lng": -79.1194757
+        }
+    },
+    {
+        "annotations": {
+            "DMS": {
+                "lat": "36\u00b0 19' 57.20448'' N",
+                "lng": "88\u00b0 15' 29.14884'' W"
+            },
+            "FIPS": {
+                "county": "47079",
+                "state": "47"
+            },
+            "MGRS": "16SCF8708521569",
+            "Maidenhead": "EM56uh99at",
+            "Mercator": {
+                "x": -9824846.405,
+                "y": 4321160.712
+            },
+            "OSM": {
+                "edit_url": "https://www.openstreetmap.org/edit?node=153390321#map=17/36.33256/-88.25810",
+                "note_url": "https://www.openstreetmap.org/note/new#map=17/36.33256/-88.25810&layers=N",
+                "url": "https://www.openstreetmap.org/?mlat=36.33256&mlon=-88.25810#map=17/36.33256/-88.25810"
+            },
+            "UN_M49": {
+                "regions": {
+                    "AMERICAS": "019",
+                    "NORTHERN_AMERICA": "021",
+                    "US": "840",
+                    "WORLD": "001"
+                },
+                "statistical_groupings": [
+                    "MEDC"
+                ]
+            },
+            "callingcode": 1,
+            "currency": {
+                "alternate_symbols": [
+                    "US$"
+                ],
+                "decimal_mark": ".",
+                "disambiguate_symbol": "US$",
+                "html_entity": "$",
+                "iso_code": "USD",
+                "iso_numeric": "840",
+                "name": "United States Dollar",
+                "smallest_denomination": 1,
+                "subunit": "Cent",
+                "subunit_to_unit": 100,
+                "symbol": "$",
+                "symbol_first": 1,
+                "thousands_separator": ","
+            },
+            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "geohash": "dn3nxwhkmr3p6um8xgbj",
+            "qibla": 49.11,
+            "roadinfo": {
+                "drive_on": "right",
+                "speed_in": "mph"
+            },
+            "sun": {
+                "rise": {
+                    "apparent": 1683629580,
+                    "astronomical": 1683623640,
+                    "civil": 1683627900,
+                    "nautical": 1683625860
+                },
+                "set": {
+                    "apparent": 1683593220,
+                    "astronomical": 1683599160,
+                    "civil": 1683594900,
+                    "nautical": 1683596940
+                }
+            },
+            "timezone": {
+                "name": "America/Chicago",
+                "now_in_dst": 1,
+                "offset_sec": -18000,
+                "offset_string": "-0500",
+                "short_name": "CDT"
+            },
+            "what3words": {
+                "words": "young.rebuilding.concurred"
+            }
+        },
+        "bounds": {
+            "northeast": {
+                "lat": 36.3525568,
+                "lng": -88.2380969
+            },
+            "southwest": {
+                "lat": 36.3125568,
+                "lng": -88.2780969
+            }
+        },
+        "components": {
+            "ISO_3166-1_alpha-2": "US",
+            "ISO_3166-1_alpha-3": "USA",
+            "ISO_3166-2": [
+                "US-TN"
+            ],
+            "_category": "place",
+            "_type": "hamlet",
+            "continent": "North America",
+            "country": "United States",
+            "country_code": "us",
+            "county": "Henry County",
+            "hamlet": "India",
+            "postcode": "38223",
+            "region": "West Tennessee",
+            "state": "Tennessee",
+            "state_code": "TN"
+        },
+        "confidence": 7,
+        "formatted": "India, Henry County, TN 38223, United States of America",
+        "geometry": {
+            "lat": 36.3325568,
+            "lng": -88.2580969
+        }
+    },
+    {
+        "annotations": {
+            "DMS": {
+                "lat": "30\u00b0 49' 1.68168'' N",
+                "lng": "89\u00b0 6' 40.17420'' W"
+            },
+            "FIPS": {
+                "county": "28131",
+                "state": "28"
+            },
+            "MGRS": "16RBV9805011242",
+            "Maidenhead": "EM50kt66pc",
+            "Mercator": {
+                "x": -9919808.9,
+                "y": 3587136.359
+            },
+            "OSM": {
+                "edit_url": "https://www.openstreetmap.org/edit?node=153472877#map=17/30.81713/-89.11116",
+                "note_url": "https://www.openstreetmap.org/note/new#map=17/30.81713/-89.11116&layers=N",
+                "url": "https://www.openstreetmap.org/?mlat=30.81713&mlon=-89.11116#map=17/30.81713/-89.11116"
+            },
+            "UN_M49": {
+                "regions": {
+                    "AMERICAS": "019",
+                    "NORTHERN_AMERICA": "021",
+                    "US": "840",
+                    "WORLD": "001"
+                },
+                "statistical_groupings": [
+                    "MEDC"
+                ]
+            },
+            "callingcode": 1,
+            "currency": {
+                "alternate_symbols": [
+                    "US$"
+                ],
+                "decimal_mark": ".",
+                "disambiguate_symbol": "US$",
+                "html_entity": "$",
+                "iso_code": "USD",
+                "iso_numeric": "840",
+                "name": "United States Dollar",
+                "smallest_denomination": 1,
+                "subunit": "Cent",
+                "subunit_to_unit": 100,
+                "symbol": "$",
+                "symbol_first": 1,
+                "thousands_separator": ","
+            },
+            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "geohash": "dj2xk4p4z6pe8ky0bdkn",
+            "qibla": 49.73,
+            "roadinfo": {
+                "drive_on": "right",
+                "speed_in": "mph"
+            },
+            "sun": {
+                "rise": {
+                    "apparent": 1683630420,
+                    "astronomical": 1683625020,
+                    "civil": 1683628860,
+                    "nautical": 1683627000
+                },
+                "set": {
+                    "apparent": 1683592740,
+                    "astronomical": 1683598200,
+                    "civil": 1683594360,
+                    "nautical": 1683596220
+                }
+            },
+            "timezone": {
+                "name": "America/Chicago",
+                "now_in_dst": 1,
+                "offset_sec": -18000,
+                "offset_string": "-0500",
+                "short_name": "CDT"
+            },
+            "what3words": {
+                "words": "cupboards.impolite.gorged"
+            }
+        },
+        "bounds": {
+            "northeast": {
+                "lat": 30.8371338,
+                "lng": -89.0911595
+            },
+            "southwest": {
+                "lat": 30.7971338,
+                "lng": -89.1311595
+            }
+        },
+        "components": {
+            "ISO_3166-1_alpha-2": "US",
+            "ISO_3166-1_alpha-3": "USA",
+            "ISO_3166-2": [
+                "US-MS"
+            ],
+            "_category": "place",
+            "_type": "hamlet",
+            "continent": "North America",
+            "country": "United States",
+            "country_code": "us",
+            "county": "Stone County",
+            "hamlet": "India",
+            "state": "Mississippi",
+            "state_code": "MS"
+        },
+        "confidence": 7,
+        "formatted": "India, Stone County, Mississippi, United States of America",
+        "geometry": {
+            "lat": 30.8171338,
+            "lng": -89.1111595
+        }
+    },
+    {
+        "annotations": {
+            "DMS": {
+                "lat": "25\u00b0 13' 52.03236'' N",
+                "lng": "55\u00b0 10' 46.79688'' E"
+            },
+            "MGRS": "40RCN1663591781",
+            "Maidenhead": "LL75of15nl",
+            "Mercator": {
+                "x": 6142572.297,
+                "y": 2885951.173
+            },
+            "OSM": {
+                "edit_url": "https://www.openstreetmap.org/edit?way=170773643#map=17/25.23112/55.17967",
+                "note_url": "https://www.openstreetmap.org/note/new#map=17/25.23112/55.17967&layers=N",
+                "url": "https://www.openstreetmap.org/?mlat=25.23112&mlon=55.17967#map=17/25.23112/55.17967"
+            },
+            "UN_M49": {
+                "regions": {
+                    "AE": "784",
+                    "ASIA": "142",
+                    "WESTERN_ASIA": "145",
+                    "WORLD": "001"
+                },
+                "statistical_groupings": [
+                    "LEDC"
+                ]
+            },
+            "callingcode": 971,
+            "currency": {
+                "alternate_symbols": [
+                    "DH",
+                    "Dhs"
+                ],
+                "decimal_mark": ".",
+                "format": "%n %u",
+                "html_entity": "",
+                "iso_code": "AED",
+                "iso_numeric": "784",
+                "name": "United Arab Emirates Dirham",
+                "smallest_denomination": 25,
+                "subunit": "Fils",
+                "subunit_to_unit": 100,
+                "symbol": "\u062f.\u0625",
+                "symbol_first": 0,
+                "thousands_separator": ","
+            },
+            "flag": "\ud83c\udde6\ud83c\uddea",
+            "geohash": "thrpx9htgmsvwy199nxe",
+            "qibla": 258.03,
+            "roadinfo": {
+                "drive_on": "right",
+                "speed_in": "km/h"
+            },
+            "sun": {
+                "rise": {
+                    "apparent": 1683596340,
+                    "astronomical": 1683591360,
+                    "civil": 1683594900,
+                    "nautical": 1683593160
+                },
+                "set": {
+                    "apparent": 1683643920,
+                    "astronomical": 1683648960,
+                    "civil": 1683645420,
+                    "nautical": 1683647160
+                }
+            },
+            "timezone": {
+                "name": "Asia/Dubai",
+                "now_in_dst": 0,
+                "offset_sec": 14400,
+                "offset_string": "+0400",
+                "short_name": "+04"
+            },
+            "what3words": {
+                "words": "december.elms.stepladder"
+            }
+        },
+        "bounds": {
+            "northeast": {
+                "lat": 25.2321518,
+                "lng": 55.1804578
+            },
+            "southwest": {
+                "lat": 25.2301128,
+                "lng": 55.1787512
+            }
+        },
+        "components": {
+            "ISO_3166-1_alpha-2": "AE",
+            "ISO_3166-1_alpha-3": "ARE",
+            "_category": "road",
+            "_type": "road",
+            "continent": "Asia",
+            "country": "United Arab Emirates",
+            "country_code": "ae",
+            "place": "India"
+        },
+        "confidence": 9,
+        "formatted": "India, United Arab Emirates",
+        "geometry": {
+            "lat": 25.2311201,
+            "lng": 55.1796658
+        }
+    },
+    {
+        "annotations": {
+            "DMS": {
+                "lat": "47\u00b0 2' 50.61588'' N",
+                "lng": "29\u00b0 23' 10.89816'' E"
+            },
+            "MGRS": "35TPN8126013194",
+            "Maidenhead": "KN47qb61ii",
+            "Mercator": {
+                "x": 3271274.698,
+                "y": 5918524.684
+            },
+            "OSM": {
+                "edit_url": "https://www.openstreetmap.org/edit?way=299651261#map=17/47.04739/29.38636",
+                "note_url": "https://www.openstreetmap.org/note/new#map=17/47.04739/29.38636&layers=N",
+                "url": "https://www.openstreetmap.org/?mlat=47.04739&mlon=29.38636#map=17/47.04739/29.38636"
+            },
+            "UN_M49": {
+                "regions": {
+                    "EASTERN_EUROPE": "151",
+                    "EUROPE": "150",
+                    "MD": "498",
+                    "WORLD": "001"
+                },
+                "statistical_groupings": [
+                    "LLDC",
+                    "MEDC"
+                ]
+            },
+            "callingcode": 373,
+            "currency": {
+                "alternate_symbols": [
+                    "lei"
+                ],
+                "decimal_mark": ".",
+                "format": "%n %u",
+                "html_entity": "",
+                "iso_code": "MDL",
+                "iso_numeric": "498",
+                "name": "Moldovan Leu",
+                "smallest_denomination": 1,
+                "subunit": "Ban",
+                "subunit_to_unit": 100,
+                "symbol": "L",
+                "symbol_first": 0,
+                "thousands_separator": ","
+            },
+            "flag": "\ud83c\uddf2\ud83c\udde9",
+            "geohash": "u8kgsswqzvf8u20pfss6",
+            "qibla": 158.17,
+            "roadinfo": {
+                "drive_on": "right",
+                "speed_in": "km/h"
+            },
+            "sun": {
+                "rise": {
+                    "apparent": 1683599820,
+                    "astronomical": 1683591900,
+                    "civil": 1683597720,
+                    "nautical": 1683595020
+                },
+                "set": {
+                    "apparent": 1683652920,
+                    "astronomical": 1683660900,
+                    "civil": 1683655020,
+                    "nautical": 1683657720
+                }
+            },
+            "timezone": {
+                "name": "Europe/Chisinau",
+                "now_in_dst": 1,
+                "offset_sec": 10800,
+                "offset_string": "+0300",
+                "short_name": "EEST"
+            },
+            "what3words": {
+                "words": "imparts.supercharged.shoplifted"
+            },
+            "wikidata": "Q11157534"
+        },
+        "bounds": {
+            "northeast": {
+                "lat": 47.0507578,
+                "lng": 29.3905406
+            },
+            "southwest": {
+                "lat": 47.0415127,
+                "lng": 29.3841147
+            }
+        },
+        "components": {
+            "ISO_3166-1_alpha-2": "MD",
+            "ISO_3166-1_alpha-3": "MDA",
+            "ISO_3166-2": [
+                "MD-SN"
+            ],
+            "_category": "place",
+            "_type": "village",
+            "continent": "Europe",
+            "country": "Moldova",
+            "country_code": "md",
+            "region": "Administrative-Territorial Units from the Left Bank of the Dniester",
+            "state": "Transnistria",
+            "state_district": "Grigoriopol District",
+            "village": "Indiya"
+        },
+        "confidence": 9,
+        "formatted": "Indiya, Grigoriopol District, Moldova",
+        "geometry": {
+            "lat": 47.0473933,
+            "lng": 29.3863606
+        }
+    }
+]
