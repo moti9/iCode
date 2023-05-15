@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "span": "cpp"
+        "span": "cpp",
+        "valarray": "cpp",
+        "sstream": "cpp",
+        "regex": "cpp"
     }
 }

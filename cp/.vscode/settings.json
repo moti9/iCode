@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "Enabled",
     "python.formatting.provider": "yapf",
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "random": "cpp"
     }
 }
