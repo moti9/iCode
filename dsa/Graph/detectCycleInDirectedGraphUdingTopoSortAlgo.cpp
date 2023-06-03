@@ -3,17 +3,16 @@ using namespace std;
 
 class Solution
 {
+
 public:
-    vector<int> eventualSafeNodes(int V, vector<int> adj[])
+    bool isCyclic(int V, vector<int> adj[])
     {
-        vector<int> adjRev[V];
         vector<int> indegree(V);
         for (int i = 0; i < V; i++)
         {
-            for (auto it : adj[i])
+            for (auto adn : adj[i])
             {
-                adjRev[it].push_back(i);
-                indegree[i] += 1;
+                indegree[adn]++;
             }
         }
         queue<int> q;
@@ -24,35 +23,35 @@ public:
                 q.push(i);
             }
         }
-        vector<int> topo;
+        int cnt = 0;
         while (!q.empty())
         {
             int node = q.front();
             q.pop();
-            topo.push_back(node);
-            for (auto it : adjRev[node])
+            cnt += 1;
+            for (auto adn : adj[node])
             {
-                indegree[it] -= 1;
-                if (indegree[it] == 0)
+                indegree[adn]--;
+                if (indegree[adn] == 0)
                 {
-                    q.push(it);
+                    q.push(adn);
                 }
             }
         }
-        sort(topo.begin(), topo.end());
-        return topo;
+        return !(cnt == V);
     }
 };
 
 int main()
 {
+
     int t;
     cin >> t;
     while (t--)
     {
-
         int V, E;
         cin >> V >> E;
+
         vector<int> adj[V];
 
         for (int i = 0; i < E; i++)
@@ -63,11 +62,8 @@ int main()
         }
 
         Solution obj;
-        vector<int> safeNodes = obj.eventualSafeNodes(V, adj);
-        for (auto i : safeNodes)
-        {
-            cout << i << " ";
-        }
-        cout << endl;
+        cout << obj.isCyclic(V, adj) << "\n";
     }
+
+    return 0;
 }
