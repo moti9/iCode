@@ -42,7 +42,7 @@ void findMinEnergy(vector<int> height, vector<int> &dp)
     {
         int right = INT_MAX;
         int left = dp[i - 1] + abs(height[i] - height[i - 1]);
-        if (i > 2)
+        if (i > 1)
             right = dp[i - 2] + abs(height[i] - height[i - 2]);
         dp[i] = min(left, right);
     }

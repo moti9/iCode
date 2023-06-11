@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// TC- O(V+E)
-// SC- O(V+E)
+// TC- O(V+2*E)
+// SC- O(V+2*E)
 
 class Solution
 {
@@ -36,7 +36,7 @@ public:
     {
         vector<int> vis(V);
         stack<int> st;
-        // O(V+E)
+        // O(V+2*E)
         for (int i = 0; i < V; i++)
         {
             if (!vis[i])
@@ -45,7 +45,7 @@ public:
             }
         }
 
-        // O(V+E)
+        // O(V+2*E)
         vector<int> adjRev[V];
         for (int i = 0; i < V; i++)
         {
@@ -56,7 +56,7 @@ public:
         }
 
         int cntScc = 0;
-        // O(V+E)
+        // O(V+2*E)
         while (!st.empty())
         {
             int node = st.top();
