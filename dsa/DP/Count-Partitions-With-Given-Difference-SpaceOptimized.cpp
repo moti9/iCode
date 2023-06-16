@@ -40,10 +40,6 @@ public:
         {
             vector<int> curr(tar + 1, 0);
 
-            if (arr[0] == 0)
-                curr[0] = 2;
-            else
-                curr[0] = 1;
             for (int target = 0; target <= tar; target++)
             {
 
