@@ -5,14 +5,6 @@ using namespace std;
 
 class Solution
 {
-    struct QueueElement
-    {
-        int row;
-        int col;
-        unordered_map<int, int> keys;
-        int moves;
-    };
-
 public:
     int shortestPathAllKeys(vector<string> &grid)
     {
@@ -20,98 +12,74 @@ public:
         int m = grid[0].length();
 
         int cntKeys = 0;
+        queue<vector<int>> q;
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < m; j++)
             {
-                if (grid[i][j] >= 'a' && grid[i][j] <= 'z')
+                if (grid[i][j] >= 'a' && grid[i][j] <= 'f')
                 {
                     cntKeys += 1;
+                }
+                else if (grid[i][j] == '@')
+                {
+                    q.push({i, j, 0, 0});
                 }
             }
         }
 
-        if (cntKeys == 0)
-        {
-            return 0;
-        }
+        int keys = pow(2, cntKeys) - 1;
+        vector<vector<vector<int>>> vis(n, vector<vector<int>>(m, vector<int>(keys + 1, 0)));
 
         int drow[] = {-1, 0, 1, 0};
         int dcol[] = {0, -1, 0, 1};
 
-        queue<QueueElement> q;
-        QueueElement eleStart;
-        eleStart.row = 0;
-        eleStart.col = 0;
-        eleStart.moves = 0;
-
-        q.push(eleStart);
-
         while (!q.empty())
         {
-            QueueElement node = q.front();
+            auto node = q.front();
             q.pop();
 
-            int row = node.row;
-            int col = node.col;
-            unordered_map<int, int> keys = node.keys;
-            int moves = node.moves;
+            int row = node[0], col = node[1], steps = node[2], currKeys = node[3];
+
+            if (currKeys == keys)
+            {
+                return steps;
+            }
 
             for (int i = 0; i < 4; i++)
             {
                 int nrow = row + drow[i];
                 int ncol = col + dcol[i];
 
-                if (nrow < 0 || nrow >= n || ncol < 0 || ncol >= m)
+                if (nrow >= 0 && nrow < n && ncol >= 0 && ncol < m && grid[nrow][ncol] != '#')
                 {
-                    continue;
-                }
-                else if (grid[nrow][ncol] == '#')
-                {
-                    continue;
-                }
-                if (grid[nrow][ncol] == '.')
-                {
-                    QueueElement nele;
-                    nele.row = nrow;
-                    nele.col = ncol;
-                    nele.keys = keys;
-                    nele.moves = moves + 1;
-                    q.push(nele);
-                }
-                else if (grid[nrow][ncol] >= 'A' && grid[nrow][ncol] <= 'Z')
-                {
-                    int lock = grid[nrow][ncol] - 'A';
-                    if (keys[lock] > 0)
+                    char curr = grid[nrow][ncol];
+
+                    if (curr >= 'a' && curr <= 'f')
                     {
-                        keys[lock] -= 1;
-                        QueueElement nele;
-                        nele.row = nrow;
-                        nele.col = ncol;
-                        nele.keys = keys;
-                        nele.moves = moves + 1;
-                        q.push(nele);
+                        int newKeys = currKeys | (1 << (curr - 'a'));
+                        if (vis[nrow][ncol][newKeys] == 0)
+                        {
+                            vis[nrow][ncol][newKeys] = 1;
+                            q.push({nrow, ncol, steps + 1, newKeys});
+                        }
+                    }
+                    else if (curr >= 'A' && curr <= 'F')
+                    {
+                        if (vis[nrow][ncol][currKeys] == 0 && (currKeys >> (curr - 'A')) & 1)
+                        {
+                            vis[nrow][ncol][currKeys] = 1;
+                            q.push({nrow, ncol, steps + 1, currKeys});
+                        }
                     }
                     else
                     {
-                        continue;
+                        if (vis[nrow][ncol][currKeys] == 0)
+                        {
+                            vis[nrow][ncol][currKeys] = 1;
+                            q.push({nrow, ncol, steps + 1, currKeys});
+                        }
                     }
-                }
-                else
-                {
-                    cntKeys -= 1;
-                    if (cntKeys == 0)
-                    {
-                        return moves + 1;
-                    }
-                    int key = grid[nrow][ncol] - 'a';
-                    keys[key] += 1;
-                    QueueElement nele;
-                    nele.row = nrow;
-                    nele.col = ncol;
-                    nele.keys = keys;
-                    nele.moves = moves + 1;
-                    q.push(nele);
                 }
             }
         }
