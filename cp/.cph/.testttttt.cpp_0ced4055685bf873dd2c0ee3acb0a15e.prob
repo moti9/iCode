@@ -1,0 +1,1 @@
+{"name":"Local: testttttt","url":"/mnt/sda5/mkprg/cp/testttttt.cpp","tests":[{"id":1696073794801,"input":"1\n3\n110","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/sda5/mkprg/cp/testttttt.cpp","group":"local","local":true}

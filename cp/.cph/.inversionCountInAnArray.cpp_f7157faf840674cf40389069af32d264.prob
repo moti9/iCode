@@ -1,0 +1,1 @@
+{"name":"Local: inversionCountInAnArray","url":"/media/moti9/New Volume/mkprg/cp/inversionCountInAnArray.cpp","tests":[{"id":1696434203279,"input":"2\n3\n3 1 2\n5\n2 3 8 6 1","output":"2\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/media/moti9/New Volume/mkprg/cp/inversionCountInAnArray.cpp","group":"local","local":true}
