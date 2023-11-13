@@ -1,0 +1,1 @@
+{"name":"Local: jspay","url":"/motik/mkprg/cp/jspay.cpp","tests":[{"id":1699775264494,"input":"7 2 5\nWorld\nAsia\nAfrica\nChina\nIndia\nSouthAfrica\nEgypt\n1 China 9\n1 India 9\n3 Asia 9\n2 India 9\n2 Asia 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/motik/mkprg/cp/jspay.cpp","group":"local","local":true}
