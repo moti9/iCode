@@ -1,10 +1,11 @@
 */.cph
-/.cph
+/.cph/*
+.gitignore
 /.cph/*
 
-.cph
+.cph/*
 .vscode
-
+.*
 /.vscode
 .git
 
