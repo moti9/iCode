@@ -1,0 +1,1 @@
+{"name":"Local: merge_num_arr","url":"/motik/mkprg/cp/merge_num_arr.cpp","tests":[{"id":1702792736854,"input":"6\n2 2 3 5 4 0","output":"97"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/motik/mkprg/cp/merge_num_arr.cpp","group":"local","local":true}
