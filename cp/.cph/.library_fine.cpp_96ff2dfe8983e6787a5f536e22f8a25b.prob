@@ -1,0 +1,1 @@
+{"name":"Local: library_fine","url":"/motik/mkprg/cp/library_fine.cpp","tests":[{"id":1703750232737,"input":"20:06:2022\n28:06:2022","output":"50"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/motik/mkprg/cp/library_fine.cpp","group":"local","local":true}
