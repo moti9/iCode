@@ -16,23 +16,32 @@ int main()
         cin >> n;
         string s;
         cin >> s;
-        vector<int> cum_sum(n + 1);
-        for (int i = 1; i <= n; i++)
+
+        int penalty = 0;
+        for (int i = 0; i < n; i++)
         {
-            cum_sum[i] = cum_sum[i - 1] + ((s[i - 1] == '+') ? 1 : -1);
+            penalty += (s[i] == '+' ? 1 : -1);
         }
 
-        vector<int> dp(n + 1, INT_MAX);
-        dp[0] = 0;
-        for (int i = 1; i <= n; i++)
-        {
-            for (int j = 0; j < i; j++)
-            {
-                dp[i] = min(dp[i], dp[j] + abs(cum_sum[i] - cum_sum[j]));
-            }
-        }
+        cout << abs(penalty) << "\n";
+        
+        // vector<int> cum_sum(n + 1);
+        // for (int i = 1; i <= n; i++)
+        // {
+        //     cum_sum[i] = cum_sum[i - 1] + ((s[i - 1] == '+') ? 1 : -1);
+        // }
 
-        cout << dp[n] << "\n";
+        // vector<int> dp(n + 1, INT_MAX);
+        // dp[0] = 0;
+        // for (int i = 1; i <= n; i++)
+        // {
+        //     for (int j = 0; j < i; j++)
+        //     {
+        //         dp[i] = min(dp[i], dp[j] + abs(cum_sum[i] - cum_sum[j]));
+        //     }
+        // }
+
+        // cout << dp[n] << "\n";
     }
     return 0;
 }
