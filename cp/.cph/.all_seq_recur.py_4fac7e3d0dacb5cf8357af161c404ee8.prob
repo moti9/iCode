@@ -1,0 +1,1 @@
+{"name":"Local: all_seq_recur","url":"/mnt/083760C05DEB8AE8/mkprg/cp/all_seq_recur.py","tests":[{"id":1705464277401,"input":"abc","output":"['c']\n['b']\n['b', 'c']\n['a']\n['a', 'c']\n['a', 'b']\n['a', 'b', 'c']"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/083760C05DEB8AE8/mkprg/cp/all_seq_recur.py","group":"local","local":true}

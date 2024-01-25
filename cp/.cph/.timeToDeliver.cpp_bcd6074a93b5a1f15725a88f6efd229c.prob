@@ -1,0 +1,1 @@
+{"name":"Local: timeToDeliver","url":"/mnt/083760C05DEB8AE8/mkprg/cp/timeToDeliver.cpp","tests":[{"id":1705756246522,"input":"10\n4\n1 2 3 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/083760C05DEB8AE8/mkprg/cp/timeToDeliver.cpp","group":"local","local":true}

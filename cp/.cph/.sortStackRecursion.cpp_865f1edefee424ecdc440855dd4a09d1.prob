@@ -1,0 +1,1 @@
+{"name":"Local: sortStackRecursion","url":"/mnt/083760C05DEB8AE8/mkprg/cp/sortStackRecursion.cpp","tests":[{"id":1705462588920,"input":"5\n1 5 -2 17 11","output":"17 11 5 1 -2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/mnt/083760C05DEB8AE8/mkprg/cp/sortStackRecursion.cpp","group":"local","local":true}
