@@ -4,7 +4,7 @@
 .git
 
 *.exe
-
+*.json
 
 
 README.md
@@ -31,3 +31,4 @@ bin/
 
 # Unignore all `.exe` in `bin` dir
 !*/bin/*.exe
+*private*

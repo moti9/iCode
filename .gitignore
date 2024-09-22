@@ -3,6 +3,7 @@ build/
 dist/
 node_modules/
 *.log
+*.json
 
 # Ignore dependencies
 npm-debug.log*
