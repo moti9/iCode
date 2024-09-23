@@ -1,110 +1,55 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-
-struct Event
-{
-    int position;
-    bool isStart;
-};
-
-bool eventComparator(const Event &a, const Event &b)
-{
-    if (a.position == b.position)
-    {
-        return a.isStart && !b.isStart;
-    }
-    return a.position < b.position;
-}
+#define mod 1000000007
 
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-
     ll ttt = 1;
     cin >> ttt;
     while (ttt--)
     {
-        int n, d, k;
+        ll n, d, k;
         cin >> n >> d >> k;
 
-        vector<Event> events;
+        vector<int> pref(n + 1), suff(n + 1);
         for (int i = 0; i < k; i++)
         {
             int l, r;
             cin >> l >> r;
-            events.push_back({l, true});
-            events.push_back({r + 1, false});
+            pref[l]++;
+            suff[r]++;
         }
 
-        sort(events.begin(), events.end(), eventComparator);
-
-        vector<int> overlaps(n + 1, 0);
-        int activeIntervals = 0;
-        int lastPosition = 1;
-
-        for (const auto &event : events)
+        for (int i = 0; i < n; i++)
         {
-            for (int i = lastPosition; i < event.position && i <= n; ++i)
-            {
-                overlaps[i] = activeIntervals;
-            }
-
-            if (event.isStart)
-            {
-                activeIntervals++;
-            }
-            else
-            {
-                activeIntervals--;
-            }
-
-            lastPosition = event.position;
+            pref[i + 1] += pref[i];
+            suff[i + 1] += suff[i];
         }
 
-        for (int i = lastPosition; i <= n; ++i)
+        int minv = 1e9, mini = 0, maxv = 0, maxi = 0;
+        for (int i = d; i <= n; i++)
         {
-            overlaps[i] = activeIntervals;
-        }
-
-        int maxOverlap = -1, bestStart1 = -1;
-        for (int i = 1; i <= n - d + 1; ++i)
-        {
-            int currentOverlap = 0;
-            for (int j = i; j < i + d; ++j)
+            int curr = pref[i] - suff[i - d];
+            if (curr > maxv)
             {
-                currentOverlap += overlaps[j];
+                maxi = i - d + 1;
+                maxv = curr;
             }
-            if (currentOverlap > maxOverlap)
+
+            if (curr < minv)
             {
-                maxOverlap = currentOverlap;
-                bestStart1 = i;
+                mini = i - d + 1;
+                minv = curr;
             }
         }
-
-        int minOverlap = INT_MAX, bestStart2 = -1;
-        for (int i = 1; i <= n - d + 1; ++i)
-        {
-            int currentOverlap = 0;
-            for (int j = i; j < i + d; ++j)
-            {
-                currentOverlap += overlaps[j];
-            }
-            if (currentOverlap < minOverlap || (currentOverlap == minOverlap && bestStart2 == -1))
-            {
-                minOverlap = currentOverlap;
-                bestStart2 = i;
-            }
-        }
-
-        cout << bestStart1 << " " << bestStart2 << "\n";
+        cout << maxi << " " << mini << "\n";
     }
-
     return 0;
 }
-
 /*
  ___  ___     _______    ____________    _
 |   \/   |   /  ___  \  |_____  _____|  | |
