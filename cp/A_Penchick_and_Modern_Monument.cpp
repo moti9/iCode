@@ -14,34 +14,23 @@ int main()
     {
         int n;
         cin >> n;
-        vector<int> arr(n);
-        int cnt_2 = 0;
+        int cnt = 0, ccnt = 0, cnum = 0;
         for (int i = 0; i < n; i++)
         {
-            cin >> arr[i];
-            cnt_2 += (arr[i] == 2);
-        }
-        if (cnt_2 & 1)
-        {
-            cout << "-1\n";
-        }
-        else
-        {
-            int index = 0;
-            int left = cnt_2 / 2;
-            while (left > 0)
+            int x;
+            cin >> x;
+            if (cnum == x)
             {
-                if (arr[index] == 2)
-                    left -= 1;
-                index++;
+                ccnt += 1;
             }
-            if (index == 0)
+            else
             {
-                if (arr[index + 1] == 1)
-                    index++;
+                ccnt = 1;
+                cnum = x;
             }
-            cout << index << "\n";
+            cnt = max(cnt, ccnt);
         }
+        cout << n - cnt << "\n";
     }
     return 0;
 }

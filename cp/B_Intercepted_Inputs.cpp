@@ -12,36 +12,35 @@ int main()
     cin >> ttt;
     while (ttt--)
     {
-        int n;
-        cin >> n;
-        vector<int> arr(n);
-        int cnt_2 = 0;
-        for (int i = 0; i < n; i++)
+        int k;
+        cin >> k;
+        vector<int> arr(k);
+        unordered_map<int, int> ump;
+        for (int i = 0; i < k; i++)
         {
             cin >> arr[i];
-            cnt_2 += (arr[i] == 2);
+            ump[arr[i]]++;
         }
-        if (cnt_2 & 1)
+
+        int gs = k - 2;
+
+        int x = -1, y = -1;
+
+        for (int n = 1; n <= sqrt(gs); n++)
         {
-            cout << "-1\n";
-        }
-        else
-        {
-            int index = 0;
-            int left = cnt_2 / 2;
-            while (left > 0)
+            if (gs % n == 0)
             {
-                if (arr[index] == 2)
-                    left -= 1;
-                index++;
+                int m = gs / n;
+                if (ump[n] > 0 && ump[m] > 0 && (n * m) == gs)
+                {
+                    x = n;
+                    y = m;
+                    break;
+                }
             }
-            if (index == 0)
-            {
-                if (arr[index + 1] == 1)
-                    index++;
-            }
-            cout << index << "\n";
         }
+
+        cout << x << " " << y << "\n";
     }
     return 0;
 }

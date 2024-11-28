@@ -14,34 +14,17 @@ int main()
     {
         int n;
         cin >> n;
-        vector<int> arr(n);
-        int cnt_2 = 0;
+        unordered_map<int, int> ump;
         for (int i = 0; i < n; i++)
         {
-            cin >> arr[i];
-            cnt_2 += (arr[i] == 2);
+            int x;
+            cin >> x;
+            ump[x]++;
         }
-        if (cnt_2 & 1)
-        {
-            cout << "-1\n";
-        }
-        else
-        {
-            int index = 0;
-            int left = cnt_2 / 2;
-            while (left > 0)
-            {
-                if (arr[index] == 2)
-                    left -= 1;
-                index++;
-            }
-            if (index == 0)
-            {
-                if (arr[index + 1] == 1)
-                    index++;
-            }
-            cout << index << "\n";
-        }
+        int ans = 0;
+        for (auto &x : ump)
+            ans += (x.second / 2);
+        cout << ans << "\n";
     }
     return 0;
 }

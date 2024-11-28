@@ -15,32 +15,32 @@ int main()
         int n;
         cin >> n;
         vector<int> arr(n);
-        int cnt_2 = 0;
+        int xorAll = 0;
         for (int i = 0; i < n; i++)
         {
             cin >> arr[i];
-            cnt_2 += (arr[i] == 2);
+            xorAll ^= arr[i];
         }
-        if (cnt_2 & 1)
+        if (xorAll == 0)
         {
-            cout << "-1\n";
+            cout << 1 << "\n";
+            cout << 1 << " " << n << "\n";
+        }
+        else if (n & 1)
+        {
+
+            cout << 4 << "\n";
+
+            cout << 1 << " " << n << "\n";
+            cout << 1 << " " << n - 1 << "\n";
+            cout << n - 1 << " " << n << "\n";
+            cout << n - 1 << " " << n << "\n";
         }
         else
         {
-            int index = 0;
-            int left = cnt_2 / 2;
-            while (left > 0)
-            {
-                if (arr[index] == 2)
-                    left -= 1;
-                index++;
-            }
-            if (index == 0)
-            {
-                if (arr[index + 1] == 1)
-                    index++;
-            }
-            cout << index << "\n";
+            cout << 2 << "\n";
+            cout << 1 << " " << n << "\n";
+            cout << 1 << " " << n << "\n";
         }
     }
     return 0;

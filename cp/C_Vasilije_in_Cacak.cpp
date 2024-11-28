@@ -12,28 +12,14 @@ int main()
     cin >> ttt;
     while (ttt--)
     {
-        int n;
-        cin >> n;
-
-        vector<int> arr(n);
-        int mini = 101, maxi = 0;
-
-        for (int i = 0; i < n; i++)
+        ll n, k, x;
+        cin >> n >> k >> x;
+        ll minSumNum = k * (k + 1);
+        ll maxSumNum = (n * (n + 1)) - (n - k) * (n - k + 1);
+        ll sumDenm = 2 * x;
+        if (sumDenm >= minSumNum && sumDenm <= maxSumNum)
         {
-            cin >> arr[i];
-            mini = min(arr[i], mini);
-            maxi = max(arr[i], maxi);
-        }
-
-        if (maxi != mini)
-        {
-            sort(arr.begin(), arr.end());
             cout << "YES\n";
-            swap(arr[0], arr[1]);
-            swap(arr[n - 1], arr[0]);
-            for (auto &x : arr)
-                cout << x << " ";
-            cout << "\n";
         }
         else
         {

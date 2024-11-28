@@ -12,35 +12,31 @@ int main()
     cin >> ttt;
     while (ttt--)
     {
-        int n;
-        cin >> n;
-        vector<int> arr(n);
-        int cnt_2 = 0;
-        for (int i = 0; i < n; i++)
+        ll n, q;
+        cin >> n >> q;
+        vector<ll> xcord(n);
+        vector<ll> pref(n);
+        for (ll i = 0; i < n; i++)
         {
-            cin >> arr[i];
-            cnt_2 += (arr[i] == 2);
-        }
-        if (cnt_2 & 1)
-        {
-            cout << "-1\n";
-        }
-        else
-        {
-            int index = 0;
-            int left = cnt_2 / 2;
-            while (left > 0)
+            cin >> xcord[i];
+            if (i > 0)
             {
-                if (arr[index] == 2)
-                    left -= 1;
-                index++;
+                pref[i] = pref[i - 1] + (xcord[i] - xcord[i - 1] + 1);
             }
-            if (index == 0)
+        }
+
+        for (ll qs = 0; qs < q; qs++)
+        {
+            ll k;
+            cin >> k;
+            if (k > n || k == 1)
             {
-                if (arr[index + 1] == 1)
-                    index++;
+                cout << 0 << "\n";
             }
-            cout << index << "\n";
+            else
+            {
+                ll sum = 0;
+            }
         }
     }
     return 0;

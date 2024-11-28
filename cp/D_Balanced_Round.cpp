@@ -12,33 +12,27 @@ int main()
     cin >> ttt;
     while (ttt--)
     {
-        int n;
-        cin >> n;
-
-        vector<int> arr(n);
-        int mini = 101, maxi = 0;
-
-        for (int i = 0; i < n; i++)
+        ll n, k;
+        cin >> n >> k;
+        vector<ll> arr(n);
+        for (ll i = 0; i < n; i++)
         {
             cin >> arr[i];
-            mini = min(arr[i], mini);
-            maxi = max(arr[i], maxi);
+        }
+        sort(arr.begin(), arr.end());
+        ll maxCnt = 1;
+        ll cnt = 1;
+
+        for (ll i = 1; i < n; i++)
+        {
+            if (abs(arr[i - 1] - arr[i]) <= k)
+                cnt += 1;
+            else
+                cnt = 1;
+            maxCnt = max(maxCnt, cnt);
         }
 
-        if (maxi != mini)
-        {
-            sort(arr.begin(), arr.end());
-            cout << "YES\n";
-            swap(arr[0], arr[1]);
-            swap(arr[n - 1], arr[0]);
-            for (auto &x : arr)
-                cout << x << " ";
-            cout << "\n";
-        }
-        else
-        {
-            cout << "NO\n";
-        }
+        cout << n - maxCnt << "\n";
     }
     return 0;
 }

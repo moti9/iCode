@@ -3,6 +3,11 @@ using namespace std;
 #define ll long long
 #define mod 1000000007
 
+bool comp(const ll &a, const ll &b)
+{
+    return a > b;
+}
+
 int main()
 {
     ios_base::sync_with_stdio(false);
@@ -12,33 +17,27 @@ int main()
     cin >> ttt;
     while (ttt--)
     {
-        int n;
-        cin >> n;
-
-        vector<int> arr(n);
-        int mini = 101, maxi = 0;
-
-        for (int i = 0; i < n; i++)
+        ll n, k;
+        cin >> n >> k;
+        map<ll, ll> prod;
+        for (ll i = 0; i < k; i++)
         {
-            cin >> arr[i];
-            mini = min(arr[i], mini);
-            maxi = max(arr[i], maxi);
+            ll b, c;
+            cin >> b >> c;
+            prod[b] += c;
         }
+        vector<ll> rec;
+        for (auto &pr : prod)
+            rec.push_back(pr.second);
 
-        if (maxi != mini)
+        sort(rec.begin(), rec.end(), comp);
+
+        ll sum = 0;
+        for (ll i = 0; i < min(n, (ll)rec.size()); i++)
         {
-            sort(arr.begin(), arr.end());
-            cout << "YES\n";
-            swap(arr[0], arr[1]);
-            swap(arr[n - 1], arr[0]);
-            for (auto &x : arr)
-                cout << x << " ";
-            cout << "\n";
+            sum += rec[i];
         }
-        else
-        {
-            cout << "NO\n";
-        }
+        cout << sum << "\n";
     }
     return 0;
 }

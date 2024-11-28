@@ -14,34 +14,24 @@ int main()
     {
         int n;
         cin >> n;
-        vector<int> arr(n);
-        int cnt_2 = 0;
+
+        int maxi_odd = 0;
+        int maxi_even = 0;
         for (int i = 0; i < n; i++)
         {
-            cin >> arr[i];
-            cnt_2 += (arr[i] == 2);
-        }
-        if (cnt_2 & 1)
-        {
-            cout << "-1\n";
-        }
-        else
-        {
-            int index = 0;
-            int left = cnt_2 / 2;
-            while (left > 0)
+            int x;
+            cin >> x;
+
+            if (i & 1)
             {
-                if (arr[index] == 2)
-                    left -= 1;
-                index++;
+                maxi_odd = max(maxi_odd, x);
             }
-            if (index == 0)
+            else
             {
-                if (arr[index + 1] == 1)
-                    index++;
+                maxi_even = max(maxi_even, x);
             }
-            cout << index << "\n";
         }
+        cout << max(maxi_odd + n / 2, maxi_even + (n + 1) / 2) << "\n";
     }
     return 0;
 }

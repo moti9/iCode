@@ -12,35 +12,28 @@ int main()
     cin >> ttt;
     while (ttt--)
     {
-        int n;
-        cin >> n;
-        vector<int> arr(n);
-        int cnt_2 = 0;
-        for (int i = 0; i < n; i++)
+        int n, k;
+        cin >> n >> k;
+        string s;
+        cin >> s;
+
+        vector<int> freq(26);
+        for (auto &ch : s)
+            freq[ch - 'a']++;
+
+        int cnt_odd = 0;
+        for (int i = 0; i < 26; i++)
         {
-            cin >> arr[i];
-            cnt_2 += (arr[i] == 2);
+            if (freq[i] & 1)
+                cnt_odd++;
         }
-        if (cnt_2 & 1)
+        if (cnt_odd > k + 1)
         {
-            cout << "-1\n";
+            cout << "NO\n";
         }
         else
         {
-            int index = 0;
-            int left = cnt_2 / 2;
-            while (left > 0)
-            {
-                if (arr[index] == 2)
-                    left -= 1;
-                index++;
-            }
-            if (index == 0)
-            {
-                if (arr[index + 1] == 1)
-                    index++;
-            }
-            cout << index << "\n";
+            cout << "YES\n";
         }
     }
     return 0;

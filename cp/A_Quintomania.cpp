@@ -14,34 +14,23 @@ int main()
     {
         int n;
         cin >> n;
-        vector<int> arr(n);
-        int cnt_2 = 0;
+        vector<int> notes(n);
         for (int i = 0; i < n; i++)
         {
-            cin >> arr[i];
-            cnt_2 += (arr[i] == 2);
+            cin >> notes[i];
         }
-        if (cnt_2 & 1)
+
+        bool is_perfect = true;
+        for (int i = 0; i < n - 1; i++)
         {
-            cout << "-1\n";
-        }
-        else
-        {
-            int index = 0;
-            int left = cnt_2 / 2;
-            while (left > 0)
+            int diff = abs(notes[i] - notes[i + 1]);
+            if (diff != 5 && diff != 7)
             {
-                if (arr[index] == 2)
-                    left -= 1;
-                index++;
+                is_perfect = false;
+                break;
             }
-            if (index == 0)
-            {
-                if (arr[index + 1] == 1)
-                    index++;
-            }
-            cout << index << "\n";
         }
+        cout << ((is_perfect) ? "YES\n" : "NO\n");
     }
     return 0;
 }

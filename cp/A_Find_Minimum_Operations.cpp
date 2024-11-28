@@ -3,6 +3,11 @@ using namespace std;
 #define ll long long
 #define mod 1000000007
 
+ll log_a_to_base_b(ll a, ll b)
+{
+    return log10(a) / log10(b);
+}
+
 int main()
 {
     ios_base::sync_with_stdio(false);
@@ -12,35 +17,23 @@ int main()
     cin >> ttt;
     while (ttt--)
     {
-        int n;
-        cin >> n;
-        vector<int> arr(n);
-        int cnt_2 = 0;
-        for (int i = 0; i < n; i++)
+        ll n, k;
+        cin >> n >> k;
+
+        if (k == 1)
         {
-            cin >> arr[i];
-            cnt_2 += (arr[i] == 2);
-        }
-        if (cnt_2 & 1)
-        {
-            cout << "-1\n";
+            cout << n << "\n";
         }
         else
         {
-            int index = 0;
-            int left = cnt_2 / 2;
-            while (left > 0)
+            ll step = 0;
+            while (n > 0)
             {
-                if (arr[index] == 2)
-                    left -= 1;
-                index++;
+                step += (n % k);
+                n /= k;
             }
-            if (index == 0)
-            {
-                if (arr[index + 1] == 1)
-                    index++;
-            }
-            cout << index << "\n";
+
+            cout << step << "\n";
         }
     }
     return 0;

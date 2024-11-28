@@ -14,26 +14,43 @@ int main()
     {
         int n;
         cin >> n;
-
         vector<int> arr(n);
-        int mini = 101, maxi = 0;
-
+        bool sorted_flag = true;
         for (int i = 0; i < n; i++)
         {
             cin >> arr[i];
-            mini = min(arr[i], mini);
-            maxi = max(arr[i], maxi);
+            if (i > 0)
+            {
+                if (arr[i - 1] >= arr[i])
+                {
+                    sorted_flag = false;
+                }
+            }
+        }
+        if (sorted_flag)
+        {
+            cout << "YES\n";
+            continue;
+        }
+        for (int i = 0; i < n - 1; i++)
+        {
+            bool swapped = false;
+            for (int j = 0; j < n - i - 1; j++)
+            {
+                if (abs(arr[j] - arr[j + 1]) == 1 && arr[j] > arr[j + 1])
+                {
+                    swap(arr[j], arr[j + 1]);
+                    swapped = true;
+                }
+            }
+
+            if (!swapped)
+                break;
         }
 
-        if (maxi != mini)
+        if (is_sorted(arr.begin(), arr.end()))
         {
-            sort(arr.begin(), arr.end());
             cout << "YES\n";
-            swap(arr[0], arr[1]);
-            swap(arr[n - 1], arr[0]);
-            for (auto &x : arr)
-                cout << x << " ";
-            cout << "\n";
         }
         else
         {

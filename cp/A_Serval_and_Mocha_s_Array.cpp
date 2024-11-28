@@ -14,34 +14,25 @@ int main()
     {
         int n;
         cin >> n;
+
         vector<int> arr(n);
-        int cnt_2 = 0;
         for (int i = 0; i < n; i++)
         {
             cin >> arr[i];
-            cnt_2 += (arr[i] == 2);
         }
-        if (cnt_2 & 1)
+        bool possible = false;
+        for (int i = 0; i < n; i++)
         {
-            cout << "-1\n";
-        }
-        else
-        {
-            int index = 0;
-            int left = cnt_2 / 2;
-            while (left > 0)
+            for (int j = i + 1; j < n; j++)
             {
-                if (arr[index] == 2)
-                    left -= 1;
-                index++;
+                if (__gcd(arr[i], arr[j]) <= 2)
+                {
+                    possible = true;
+                    break;
+                }
             }
-            if (index == 0)
-            {
-                if (arr[index + 1] == 1)
-                    index++;
-            }
-            cout << index << "\n";
         }
+        cout << ((possible) ? "Yes" : "No") << "\n";
     }
     return 0;
 }
