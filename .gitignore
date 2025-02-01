@@ -28,6 +28,8 @@ Thumbs.db
 *.dll
 *.so
 *.dylib
+*.o
+*.bin
 
 # Ignore archives and backups
 *.zip
