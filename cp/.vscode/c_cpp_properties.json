@@ -18,7 +18,7 @@
         {
             "name": "– ms-vscode.cpptools",
             "includePath": [
-                "${workspaceFolder}/**",
+                "/Users/moti.yadav/Desktop/mkyzone/iCode/cp/**",
                 "/usr/local/Cellar/gcc/14.2.0_1/include/c++/14/x86_64-apple-darwin24"
             ],
             "defines": [
@@ -27,7 +27,13 @@
                 "_UNICODE"
             ],
             "cStandard": "c11",
-            "cppStandard": "gnu++14"
+            "cppStandard": "gnu++14",
+            "mergeConfigurations": false,
+            "recursiveIncludes": {},
+            "compilerPath": "/usr/bin/clang",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ],
     "version": 4
