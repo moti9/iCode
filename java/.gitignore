@@ -23,6 +23,7 @@ README.md
 # Ignore files with extension `.class` & `.exe`
 *.class
 *.exe
+*.bin
 
 # Ignore `bin` dir
 bin/

@@ -74,6 +74,9 @@ README.md
 # Ignore files with extension `.class` & `.exe`
 *.class
 *.exe
+*.bin
+*/*.bin
+*.exe
 
 # Ignore `bin` dir
 bin/
@@ -87,3 +90,4 @@ dsa/BinSearch/.vscode/settings.json
 dsa/DP/.vscode/settings.json
 cp/.vscode/settings.json
 cp/.vscode/settings.json
+*/.vscode/settings.json
