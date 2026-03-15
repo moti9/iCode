@@ -1,0 +1,211 @@
+{
+  "groups": [
+    {
+      "name": "app.google.oauth",
+      "type": "com.jwtauth.config.ApplicationProperties$GoogleOAuth",
+      "sourceType": "com.jwtauth.config.ApplicationProperties",
+      "description": "Google OAuth 2.0 configuration properties for authentication."
+    },
+    {
+      "name": "app.jwt",
+      "type": "com.jwtauth.config.ApplicationProperties$Jwt",
+      "sourceType": "com.jwtauth.config.ApplicationProperties",
+      "description": "JWT token configuration including expiry times."
+    },
+    {
+      "name": "app.security",
+      "type": "com.jwtauth.config.ApplicationProperties$Security",
+      "sourceType": "com.jwtauth.config.ApplicationProperties",
+      "description": "Security configuration including CORS and cookie settings."
+    },
+    {
+      "name": "app.security.cors",
+      "type": "com.jwtauth.config.ApplicationProperties$Security$Cors",
+      "sourceType": "com.jwtauth.config.ApplicationProperties",
+      "description": "CORS (Cross-Origin Resource Sharing) configuration."
+    },
+    {
+      "name": "app.security.cookie",
+      "type": "com.jwtauth.config.ApplicationProperties$Security$Cookie",
+      "sourceType": "com.jwtauth.config.ApplicationProperties",
+      "description": "Cookie security configuration."
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.google.oauth.client-id",
+      "type": "java.lang.String",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$GoogleOAuth",
+      "description": "Google OAuth Client ID from Google Cloud Console."
+    },
+    {
+      "name": "app.google.oauth.client-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$GoogleOAuth",
+      "description": "Google OAuth Client Secret from Google Cloud Console."
+    },
+    {
+      "name": "app.google.oauth.redirect-uri",
+      "type": "java.lang.String",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$GoogleOAuth",
+      "description": "OAuth callback URL where Google redirects after authentication."
+    },
+    {
+      "name": "app.google.oauth.token-url",
+      "type": "java.lang.String",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$GoogleOAuth",
+      "description": "Google OAuth token endpoint URL."
+    },
+    {
+      "name": "app.google.oauth.user-info-url",
+      "type": "java.lang.String",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$GoogleOAuth",
+      "description": "Google user info endpoint URL to fetch user details."
+    },
+    {
+      "name": "app.google.oauth.authorization-url",
+      "type": "java.lang.String",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$GoogleOAuth",
+      "description": "Google OAuth authorization endpoint URL."
+    },
+    {
+      "name": "app.google.oauth.scope",
+      "type": "java.lang.String",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$GoogleOAuth",
+      "description": "OAuth scopes to request (e.g., openid email profile)."
+    },
+    {
+      "name": "app.google.oauth.access-type",
+      "type": "java.lang.String",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$GoogleOAuth",
+      "description": "OAuth access type (online or offline)."
+    },
+    {
+      "name": "app.google.oauth.prompt",
+      "type": "java.lang.String",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$GoogleOAuth",
+      "description": "OAuth prompt parameter (none, consent, select_account)."
+    },
+    {
+      "name": "app.jwt.access-token-expiry-days",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$Jwt",
+      "description": "Number of days until access token expires.",
+      "defaultValue": 1
+    },
+    {
+      "name": "app.jwt.refresh-token-expiry-days",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$Jwt",
+      "description": "Number of days until refresh token expires.",
+      "defaultValue": 30
+    },
+    {
+      "name": "app.security.allowed-email-domains",
+      "type": "java.util.List",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$Security",
+      "description": "Comma-separated list of allowed email domains for authentication."
+    },
+    {
+      "name": "app.security.dev-auth-enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$Security",
+      "description": "Enable development authentication bypass.",
+      "defaultValue": false
+    },
+    {
+      "name": "app.security.developer-emails",
+      "type": "java.util.List",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$Security",
+      "description": "Comma-separated list of developer emails for special access."
+    },
+    {
+      "name": "app.security.cors.allowed-origins",
+      "type": "java.util.List",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$Security$Cors",
+      "description": "List of allowed origins for CORS requests."
+    },
+    {
+      "name": "app.security.cors.max-age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$Security$Cors",
+      "description": "Maximum age (in seconds) for CORS preflight cache.",
+      "defaultValue": 3600
+    },
+    {
+      "name": "app.security.cookie.secure",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$Security$Cookie",
+      "description": "Whether cookies should be marked as secure (HTTPS only).",
+      "defaultValue": false
+    },
+    {
+      "name": "app.security.cookie.same-site",
+      "type": "java.lang.String",
+      "sourceType": "com.jwtauth.config.ApplicationProperties$Security$Cookie",
+      "description": "SameSite cookie attribute (Strict, Lax, or None).",
+      "defaultValue": "Lax"
+    },
+    {
+      "name": "spring.h2.console.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable the H2 database console for web-based database access.",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.h2.console.path",
+      "type": "java.lang.String",
+      "description": "Path at which the H2 console is available.",
+      "defaultValue": "/h2-console"
+    }
+  ],
+  "hints": [
+    {
+      "name": "app.google.oauth.access-type",
+      "values": [
+        {
+          "value": "online",
+          "description": "Request online access (default)."
+        },
+        {
+          "value": "offline",
+          "description": "Request offline access to get refresh token."
+        }
+      ]
+    },
+    {
+      "name": "app.google.oauth.prompt",
+      "values": [
+        {
+          "value": "none",
+          "description": "Do not display authentication or consent screens."
+        },
+        {
+          "value": "consent",
+          "description": "Prompt user for consent."
+        },
+        {
+          "value": "select_account",
+          "description": "Prompt user to select an account."
+        }
+      ]
+    },
+    {
+      "name": "app.security.cookie.same-site",
+      "values": [
+        {
+          "value": "Strict",
+          "description": "Cookie only sent in first-party context."
+        },
+        {
+          "value": "Lax",
+          "description": "Cookie sent on top-level navigation (recommended)."
+        },
+        {
+          "value": "None",
+          "description": "Cookie sent in all contexts (requires Secure flag)."
+        }
+      ]
+    }
+  ]
+}
