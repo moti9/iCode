@@ -92,4 +92,4 @@ cp/.vscode/settings.json
 cp/.vscode/settings.json
 */.vscode/settings.json
 
-*.vscode
+*.vscode/*
